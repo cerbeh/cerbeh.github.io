@@ -3,8 +3,7 @@ h1 {
   background-color: chartreuse; }
 
 .button-style {
-  text-align: center;
-  height: 100%; }
+  text-align: center; }
   .button-style:hover {
     background-color: papayawhip;
     color: saddleBrown; }
