@@ -8,4 +8,9 @@ h1 {
     background-color: papayawhip;
     color: saddleBrown; }
 
+.contact-list {
+  display: flex;
+  align-items: center;
+  justify-content: space-around; }
+
 /*# sourceMappingURL=style.css.map */
