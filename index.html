@@ -1,13 +1,47 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
-    <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Martin Allgood</title>
-  </head>
-  <body>
-    <h1 class="title is-2">Martin Allgood</h1>
-  </body>
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css">
+  <script defer src="https://use.fontawesome.com/releases/v5.1.0/js/all.js"></script>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/style.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  <script src="/js/app.js" charset="utf-8"></script>
+  <title>Martin Allgood</title>
+</head>
+<body>
+  <h1 class="title is-2">Martin Allgood</h1>
+
+  <div class="columns">
+    <div class="column">
+      <button class="button" id="about-me-button">
+        About Me
+      </button>
+    </div>
+    <div class="column">
+      <button class="button" id="projects-button">
+        Projects
+      </button>
+    </div>
+    <div class="column">
+      <button class="button" id="skills-button">
+        Skills
+      </button>
+    </div>
+    <div class="column">
+      <button class="button" id="contact-button">
+        Contact Me
+      </button>
+    </div>
+  </div>
+
+  <div class="modal">
+    <div class="modal-background"></div>
+    <div class="modal-content">
+      <!-- Any other Bulma elements you want -->
+    </div>
+    <button class="modal-close is-large" aria-label="close"></button>
+  </div>
+</body>
 </html>
