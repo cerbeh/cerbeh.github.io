@@ -1,16 +1,31 @@
 h1 {
-  text-align: center;
-  background-color: chartreuse; }
+  text-align: center; }
 
 .button-style {
   text-align: center; }
   .button-style:hover {
-    background-color: papayawhip;
-    color: saddleBrown; }
+    background-color: white;
+    color: black; }
 
 .contact-list {
   display: flex;
   align-items: center;
   justify-content: space-around; }
+
+.modal {
+  height: 100vh; }
+
+.modal-background {
+  background-color: #7b9400;
+  opacity: 0.7; }
+
+.modal-content {
+  width: 70%;
+  height: 100%;
+  padding: 5%; }
+
+.contact-column {
+  display: flex;
+  justify-content: center; }
 
 /*# sourceMappingURL=style.css.map */

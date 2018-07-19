@@ -38,35 +38,36 @@ const modalContent = {
     <img src="./assets/martin-2.jpg" alt="Picture of Martin Allgood">
   </figure>`,
 
-  skillsPage: '<h1 class="title is-3">Skills</h1>',
+  skillsPage: '<h1 class="title is-3">Skills:</h1>',
+
   contactPage:
   `Find me on:
-  <ul class="contact-list">
-    <li>
-      <a class="button is-large" target="_blank" href="http://linkedin.com/in/martin-allgood">
+  <div class="columns is-centered">
+    <div class="column is-4">
+      <a class="button is-large contact-column" target="_blank" href="http://linkedin.com/in/martin-allgood">
         <span class="icon is-medium">
           <i class="fab fa-linkedin"></i>
         </span>
         <span>Linkedin</span>
       </a>
-    </li>
-    <li>
-      <a class="button is-large" target="_blank" href="http://github.com/cerbeh">
+    </div>
+    <div class="column is-4">
+      <a class="button is-large contact-column" target="_blank" href="http://github.com/cerbeh">
         <span class="icon is-medium">
           <i class="fab fa-github"></i>
         </span>
         <span>GitHub</span>
       </a>
-    </li>
-    <li>
-      <a class="button is-large" target="_blank" href="mailto:martintallgood@gmail.com">
+    </div>
+    <div class="column is-4">
+      <a class="button is-large contact-column" href="mailto:martintallgood@gmail.com">
         <span class="icon is-medium">
           <i class="fas fa-envelope"></i>
         </span>
         <span>Email</span>
       </a>
-    </li>
-  </ul>`
+    </div>
+  </div>`
 };
 
 $(()=>{

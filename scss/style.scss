@@ -1,13 +1,13 @@
 h1 {
   text-align: center;
-  background-color: chartreuse;
+  // background-color: chartreuse;
 }
 
 .button-style {
   text-align: center;
   &:hover {
-    background-color: papayawhip;
-    color: saddleBrown;
+    background-color: white;
+    color: black;
   }
 }
 
@@ -15,4 +15,24 @@ h1 {
   display: flex;
   align-items: center;
   justify-content: space-around;
+}
+
+.modal {
+  height: 100vh;
+}
+
+.modal-background {
+  // background-color: chartreuse;
+  background-color: hsl(70°, 100%, 29%);
+  opacity: 0.7;
+}
+.modal-content {
+  width: 70%;
+  height: 100%;
+  padding: 5%;
+}
+
+.contact-column {
+  display: flex;
+  justify-content: center;
 }
