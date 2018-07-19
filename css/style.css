@@ -3,6 +3,10 @@ h1 {
   background-color: chartreuse; }
 
 .button-style {
-  width: 100%; }
+  text-align: center;
+  height: 100%; }
+  .button-style:hover {
+    background-color: papayawhip;
+    color: saddleBrown; }
 
 /*# sourceMappingURL=style.css.map */

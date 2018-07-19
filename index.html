@@ -11,36 +11,52 @@
   <title>Martin Allgood</title>
 </head>
 <body>
-  <h1 class="title is-2">Martin Allgood</h1>
+  <section class="hero is-danger is-fullheight">
 
-  <div class="columns is-centered">
-    <div class="column is-3">
-      <button class="button button-style" id="about-me-button">
-        About Me
-      </button>
+    <!-- Hero content: will be in the middle -->
+    <div class="hero-body">
+      <div class="container has-text-centered">
+        <h1 class="title">
+          Martin Allgood
+        </h1>
+        <h2 class="subtitle">
+          Web Developer
+        </h2>
+      </div>
     </div>
-    <div class="column is-3">
-      <button class="button button-style" id="projects-button">
-        Projects
-      </button>
+
+    <!-- Hero footer: will stick at the bottom -->
+    <div class="hero-foot">
+      <nav class="tabs is-boxed is-fullwidth is-centered">
+        <div class="container">
+          <ul>
+            <li class="is-active">
+              <a class="button-style" id="aboutPage">About Me</a>
+            </li>
+            <li>
+              <a class="button-style" id="projectsPage">Projects</a>
+            </li>
+            <li>
+              <a class="button-style" id="aboutPage">Skills</a>
+            </li>
+            <li>
+              <a class="button-style" id="aboutPage">About Me</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
     </div>
-    <div class="column is-3">
-      <button class="button button-style" id="skills-button">
-        Skills
-      </button>
-    </div>
-    <div class="column is-3">
-      <button class="button button-style" id="contact-button">
-        Contact Me
-      </button>
-    </div>
-  </div>
+  </section>
 
 
   <div class="modal" id="modal">
-    <div class="modal-background"></div>
-    <div class="modal-content"></div>
-    <button class="modal-close is-large" aria-label="close"></button>
+    <div class="modal-background close-modal"></div>
+    <div class="modal-content">
+
+
+
+    </div>
+    <button class="modal-close is-large close-modal" aria-label="close"></button>
   </div>
 
 </body>

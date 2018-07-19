@@ -4,5 +4,10 @@ h1 {
 }
 
 .button-style {
-  width: 100%;
+  text-align: center;
+  height: 100%;
+  &:hover {
+    background-color: papayawhip;
+    color: saddleBrown;
+  }
 }
