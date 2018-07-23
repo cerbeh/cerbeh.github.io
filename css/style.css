@@ -1,3 +1,6 @@
+body {
+  font-family: 'Fira Sans', sans-serif; }
+
 h1 {
   text-align: center; }
 
@@ -16,13 +19,15 @@ h1 {
   height: 100vh; }
 
 .modal-background {
-  background-color: #7b9400;
-  opacity: 0.7; }
+  background-color: chartreuse;
+  opacity: 1; }
 
 .modal-content {
-  width: 70%;
-  height: 100%;
+  width: 80%;
   padding: 5%; }
+
+.projects-wrapper {
+  background-color: chartreuse; }
 
 .contact-column {
   display: flex;
