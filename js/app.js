@@ -78,21 +78,23 @@ $(()=>{
   const $modalClose = $('.close-modal');
   const $modalContent = $('.modal-content');
   const $content = $('.content');
-  const content =   $.get('/assets/content.txt', (content) => content);
 
   $buttons.on('click', ({ target: { id }}) => {
-    $modalContent.html(modalContent[id]);
-    $modal.toggleClass('is-active');
-    $content.text(content.responseText);
+    $.get(`/assets/${id}.txt`, (content) => content)
+      .then(res => {
+        $modalContent.html(modalContent[id]);
+        $modal.toggleClass('is-active');
+        $content.text(res);
+      });
   });
 
   $modalClose.on('click', () => {
     $modal.toggleClass('is-active');
   });
 
-  $.get('/assets/content.txt', (content) => {
-    console.log(content);
-    console.log($content);
-  });
+  // $.get('/assets/content.txt', (content) => {
+  //   console.log(content);
+  //   console.log($content);
+  // });
 
 });
