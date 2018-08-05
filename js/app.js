@@ -1,9 +1,22 @@
 const modalContent = {
 
-  // aboutPage:
-  // `<figure class="image is-3by4">
-  //     <img src="./assets/martin-cropped.jpg" alt="Picture of Martin Allgood">
-  // </figure>`,
+  aboutPage:
+  `      <div class="card-image">
+          <figure class="image is-128x128">
+            <img src="./assets/martin-cropped.jpg" alt="Picture of Martin Allgood">
+          </figure>
+        </div>
+        <div class="card-content">
+          <div class="media">
+            <div class="media-content modal-card-body-background-color-is-danger">
+              <p class="title is-4">Martin Allgood</p>
+            </div>
+          </div>
+
+          <div class="content">
+
+          </div>
+        </div>`
   //
   // projectsPage:
   // `<div class="tabs is-centered is-boxed is-medium">
@@ -77,14 +90,14 @@ $(()=>{
   const $modal = $('#modal');
   const $modalClose = $('.close-modal');
   const $modalContent = $('.modal-content');
-  const $content = $('.content');
+  // const $content = $('.content');
 
   $buttons.on('click', ({ target: { id }}) => {
     $.get(`/assets/${id}.txt`, (content) => content)
       .then(res => {
         $modalContent.html(modalContent[id]);
         $modal.toggleClass('is-active');
-        $content.text(res);
+        $('.content').text(res);
       });
   });
 
