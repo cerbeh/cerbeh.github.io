@@ -77,10 +77,13 @@ $(()=>{
   const $modal = $('#modal');
   const $modalClose = $('.close-modal');
   const $modalContent = $('.modal-content');
+  const $content = $('.content');
+  const content =   $.get('/assets/content.txt', (content) => content);
 
   $buttons.on('click', ({ target: { id }}) => {
     $modalContent.html(modalContent[id]);
     $modal.toggleClass('is-active');
+    $content.text(content.responseText);
   });
 
   $modalClose.on('click', () => {
@@ -89,6 +92,7 @@ $(()=>{
 
   $.get('/assets/content.txt', (content) => {
     console.log(content);
+    console.log($content);
   });
 
 });
