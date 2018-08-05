@@ -87,4 +87,8 @@ $(()=>{
     $modal.toggleClass('is-active');
   });
 
+  $.get('/assets/content.txt', (content) => {
+    console.log(content);
+  });
+
 });
