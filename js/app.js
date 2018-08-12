@@ -73,8 +73,7 @@ $(()=>{
   const $modalContent = $('.modal-content');
 
   $buttons.on('click', ({ target: { id }}) => {
-    $.get(`/assets/${id}.html`, (content) =>  {
-      $modalContent.html(content);
+    $modalContent.load(`/assets/${id}.html`, () =>  {
       $modal.toggleClass('is-active');
     });
   });
