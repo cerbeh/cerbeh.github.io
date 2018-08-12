@@ -1,0 +1,15 @@
+.content-enter {
+  animation: slidein 1s 1;
+}
+
+@keyframes slidein {
+  from {
+    margin-bottom: 100%;
+    height: 300%;
+  }
+
+  to {
+    margin-bottom: 0%;
+    height: 100%;
+  }
+}
