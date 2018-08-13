@@ -6,7 +6,6 @@ body {
 
 h1 {
   text-align: center;
-  // background-color: chartreuse;
 }
 
 .button-style {
@@ -29,9 +28,9 @@ h1 {
 
 .modal-background {
   background-color: chartreuse;
-  // background-color: hsl(70°, 100%, 29%);
-  opacity: 0.8;
+  opacity: 1;
 }
+
 .modal-content {
   width: 80%;
   padding: 5%;
@@ -44,8 +43,4 @@ h1 {
 .contact-column {
   display: flex;
   justify-content: center;
-}
-
-.exit-animation {
-  background-color: papayawhip;
 }

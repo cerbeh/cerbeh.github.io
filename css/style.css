@@ -1,5 +1,5 @@
 .content-enter {
-  animation: slidein 1.5s 1; }
+  animation: slidein 2s 1; }
 
 @keyframes slidein {
   from {
@@ -30,7 +30,7 @@ h1 {
 
 .modal-background {
   background-color: chartreuse;
-  opacity: 0.8; }
+  opacity: 1; }
 
 .modal-content {
   width: 80%;
@@ -42,8 +42,5 @@ h1 {
 .contact-column {
   display: flex;
   justify-content: center; }
-
-.exit-animation {
-  background-color: papayawhip; }
 
 /*# sourceMappingURL=style.css.map */
