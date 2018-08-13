@@ -1,0 +1,14 @@
+.animate-out {
+  animation: slideUp 4s 1;
+}
+
+@keyframes slideUp {
+  0% {
+    margin-bottom: 0%;
+    height: 100%;
+  }
+  100% {
+    margin-bottom: 100%;
+    height: 300%;
+  }
+}

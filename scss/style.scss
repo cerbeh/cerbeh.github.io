@@ -1,7 +1,13 @@
 @import "animations/entrance.scss";
+@import "animations/main.scss";
+@import "components/contactPage.scss";
+@import "components/modal.scss";
 
 body {
   font-family: 'Fira Sans', sans-serif;
+  min-height:100%;
+  height:100%;
+  background-size: cover;
 }
 
 h1 {
@@ -14,33 +20,4 @@ h1 {
     background-color: white;
     color: black;
   }
-}
-
-.contact-list {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-}
-
-.modal {
-  height: 100vh;
-}
-
-.modal-background {
-  background-color: chartreuse;
-  opacity: 1;
-}
-
-.modal-content {
-  width: 80%;
-  padding: 5%;
-}
-
-.projects-wrapper {
-  background-color: chartreuse;
-}
-
-.contact-column {
-  display: flex;
-  justify-content: center;
 }
