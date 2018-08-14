@@ -8,6 +8,26 @@
   to {
     margin-bottom: 0%;
     height: 100%; } }
+@keyframes slideUpLarge {
+  0% {
+    transform: translateY(0%); }
+  100% {
+    transform: translateY(-100%); } }
+@keyframes slideDownLarge {
+  0% {
+    transform: translateY(-100%); }
+  100% {
+    transform: translateY(0%); } }
+@keyframes moveUp {
+  0% {
+    transform: translateY(150px); }
+  100% {
+    transform: translateY(0); } }
+@keyframes moveDown {
+  0% {
+    transform: translateY(0px); }
+  100% {
+    transform: translateY(150px); } }
 .animate-out {
   animation: slideUp 4s 1; }
 
@@ -38,6 +58,21 @@
   width: 80%;
   padding: 5%;
   background-color: white; }
+
+#modal {
+  height: 100vh; }
+  #modal.content-enter {
+    z-index: 0;
+    transform: scale(1); }
+    #modal.content-enter .modal-background .modal {
+      animation: moveUp 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    #modal.content-enter + .modal-content {
+      z-index: 1;
+      animation: slideUpLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    #modal.content-enter.out .modal-background .modal {
+      animation: moveDown 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
+    #modal.content-enter.out + .modal.content {
+      animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
 
 body {
   font-family: 'Fira Sans', sans-serif;
