@@ -1,5 +1,5 @@
 .content-enter {
-  animation: slidein 2s 1; }
+  animation: slidein 1s 1; }
 
 @keyframes slidein {
   from {
