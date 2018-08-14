@@ -4,21 +4,34 @@ $(()=>{
   const $modal = $('#modal');
   const $modalClose = $('.close-modal');
   const $modalContent = $('.modal-content');
-  // const $main = $('#main');
 
-  $buttons.on('click', ({ target: { id }}) => {
-    $modalContent.load(`/assets/${id}.html`, () =>  {
-      // $modal.removeAttr('class').addClass('content-enter');
+  const clickEvent = {
+
+    openTab: ({target: { id }}) => {
+      $modalContent.load(`/assets/${id}.html`, () =>  {
+        $modal.toggleClass('is-active');
+      });
+    },
+
+    chooseProject: ({currentTarget: { parentElement }}) => {
+      const $currentButton = parentElement;
+      $('#project-content').load(`/assets/${$currentButton.id}.html`);
+      $('.projects-buttons').parent().removeAttr('class');
+      $(`#${$currentButton.id}`).addClass('is-active');
+    },
+
+    closeModal: () => {
+      $modal.addClass('out');
       $modal.toggleClass('is-active');
-      // $main.toggleClass('animate-out');
-    });
-  });
+    }
 
-  $modalClose.on('click', () => {
-    $modal.addClass('out');
-    $modal.toggleClass('is-active');
-    // $main.toggleClass('animate-out');
-  });
+  };
+
+  $buttons.on('click', clickEvent.openTab);
+
+  $modal.on('click', '.projects-buttons', clickEvent.chooseProject);
+
+  $modalClose.on('click', clickEvent.closeModal);
 
 });
 

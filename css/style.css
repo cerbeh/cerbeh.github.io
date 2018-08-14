@@ -74,6 +74,9 @@
     #modal.content-enter.out + .modal.content {
       animation: slideDownLarge 0.5s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
 
+#project-content {
+  height: 65vh; }
+
 body {
   font-family: 'Fira Sans', sans-serif;
   min-height: 100%;
