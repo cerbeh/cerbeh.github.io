@@ -13,15 +13,20 @@ $(()=>{
       });
     },
 
-    chooseProject: ({currentTarget: { parentElement }}) => {
+    chooseProjectTab: ({currentTarget: { parentElement }}) => {
       const $currentButton = parentElement;
       $('#project-content').load(`/assets/${$currentButton.id}.html`);
       $('.projects-buttons').parent().removeAttr('class');
       $(`#${$currentButton.id}`).addClass('is-active');
     },
 
-    nextProject: () => {
-      console.log('hello');
+    navigateProjects: ({ target: { attributes: { navigateTo} } }) => {
+      console.log(navigateTo);
+      // const projectName = navigateTo.value;
+      // $('#project-content').load(`/assets/${projectName}.html`);
+      //I feel like the problem is here with the removeAttr command. It must somehow be removing the classes or something because they then dont exist? Or something?
+      // $('.projects-buttons').parent().removeAttr('class');
+      // $(`#${projectName}`).addClass('is-active');
     },
 
     closeModal: () => {
@@ -33,8 +38,8 @@ $(()=>{
 
   $buttons.on('click', clickEvent.openTab);
 
-  $modal.on('click', '.projects-buttons', clickEvent.chooseProject);
-  $modal.on('click', '.next-buttons', clickEvent.nextProject);
+  $modal.on('click', '.projects-buttons', clickEvent.chooseProjectTab);
+  $modal.on('click', '.next-buttons', clickEvent.navigateProjects);
 
   $modalClose.on('click', clickEvent.closeModal);
 
