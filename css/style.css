@@ -77,6 +77,12 @@
 #project-content {
   height: 65vh; }
 
+.projects-picture {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center; }
+
 body {
   font-family: 'Fira Sans', sans-serif;
   min-height: 100%;
