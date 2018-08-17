@@ -85,6 +85,7 @@
 
 .next-buttons {
   height: 100vh;
+  text-decoration: none;
   display: flex;
   align-items: center;
   justify-content: center;

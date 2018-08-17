@@ -20,6 +20,10 @@ $(()=>{
       $(`#${$currentButton.id}`).addClass('is-active');
     },
 
+    nextProject: () => {
+      console.log('hello');
+    },
+
     closeModal: () => {
       $modal.addClass('out');
       $modal.toggleClass('is-active');
@@ -30,6 +34,7 @@ $(()=>{
   $buttons.on('click', clickEvent.openTab);
 
   $modal.on('click', '.projects-buttons', clickEvent.chooseProject);
+  $modal.on('click', '.next-buttons', clickEvent.nextProject);
 
   $modalClose.on('click', clickEvent.closeModal);
 
