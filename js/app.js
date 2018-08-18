@@ -14,8 +14,8 @@ $(()=>{
     },
 
     chooseProjectTab: ({currentTarget: { parentElement }}) => {
-      const currentButton = parentElement;
-      userAction.toggleProjectTabs(currentButton);
+      const $currentButton = parentElement.id;
+      userAction.toggleProjectTabs($currentButton);
     },
 
     navigateProjects: ({currentTarget: { attributes: { navigateTo }}}) => {
