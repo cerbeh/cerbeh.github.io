@@ -26,9 +26,13 @@ $(()=>{
 
     navigateProjects: ({currentTarget: { attributes: { navigateTo }}}) => {
       const projectName = navigateTo.value;
-      $('#project-content').load(`/assets/${projectName}.html`);
+      clickEvent.toggleProjectTabs(projectName);
+    },
+
+    toggleProjectTabs: (project) => {
+      $('#project-content').load(`/assets/${project}.html`);
       $('.projects-buttons').parent().removeAttr('class');
-      $(`#${projectName}`).addClass('is-active');
+      $(`#${project}`).addClass('is-active');
     },
 
     closeModal: () => {
