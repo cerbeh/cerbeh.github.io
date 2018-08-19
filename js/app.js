@@ -8,7 +8,7 @@ $(()=>{
   const userAction = {
 
     openTab: ({target: { id }}) => {
-      $modalContent.load(`/assets/${id}.html`, () =>  {
+      $modalContent.load(`/views/${id}.html`, () =>  {
         $modal.toggleClass('is-active');
       });
     },
@@ -24,7 +24,7 @@ $(()=>{
     },
 
     toggleProjectTabs: (project) => {
-      $('#project-content').load(`/assets/${project}.html`);
+      $('#project-content').load(`/views/${project}.html`);
       $('.projects-buttons').parent().removeAttr('class');
       $(`#${project}`).addClass('is-active');
     },
@@ -45,15 +45,3 @@ $(()=>{
 
 
 });
-
-//
-// $('.button').click(function(){
-//   var buttonId = $(this).attr('id');
-//   $('#modal-container').removeAttr('class').addClass(buttonId);
-//   $('body').addClass('modal-active');
-// })
-//
-// $('#modal-container').click(function(){
-//   $(this).addClass('out');
-//   $('body').removeClass('modal-active');
-// });
