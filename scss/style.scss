@@ -4,6 +4,7 @@
 @import "components/contactPage.scss";
 @import "components/modal.scss";
 @import "components/projectsPage.scss";
+@import "components/aboutPage.scss";
 
 body {
   font-family: 'Fira Sans', sans-serif;
@@ -22,4 +23,8 @@ h1 {
     background-color: white;
     color: black;
   }
+}
+
+ul.is-active {
+  background-color: chartreuse !important;
 }

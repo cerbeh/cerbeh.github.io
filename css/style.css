@@ -91,6 +91,15 @@
   justify-content: center;
   align-content: center; }
 
+.social-text {
+  display: flex;
+  justify-content: center; }
+
+.social-text-box {
+  display: flex;
+  justify-content: center;
+  flex-direction: column; }
+
 body {
   font-family: 'Fira Sans', sans-serif;
   min-height: 100%;
@@ -105,5 +114,8 @@ h1 {
   .button-style:hover {
     background-color: white;
     color: black; }
+
+ul.is-active {
+  background-color: chartreuse !important; }
 
 /*# sourceMappingURL=style.css.map */
