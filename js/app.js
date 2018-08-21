@@ -10,6 +10,10 @@ $(()=>{
     openTab: ({target: { id }}) => {
       $modalContent.load(`/views/${id}.html`, () =>  {
         $modal.toggleClass('is-active');
+        if (id === 'aboutPage') {
+          $('#project-content').load('/views/aboutProfessional.html');
+          $('#aboutProfessional').addClass('is-active');
+        }
       });
     },
 

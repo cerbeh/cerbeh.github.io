@@ -25,6 +25,11 @@ h1 {
   }
 }
 
-ul.is-active {
-  background-color: chartreuse !important;
+div.tabs {
+  // background-color: chartreuse;
+  // background-color: hsl(348, 100%, 61%);
+  color: white;
+}
+
+div.modal-content {
 }

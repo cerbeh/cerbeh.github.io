@@ -115,7 +115,7 @@ h1 {
     background-color: white;
     color: black; }
 
-ul.is-active {
-  background-color: chartreuse !important; }
+div.tabs {
+  color: white; }
 
 /*# sourceMappingURL=style.css.map */
