@@ -42,31 +42,14 @@ $(()=>{
 
   $('body').keydown(function(e) {
     if($('#modal').is(':visible')) {
-      if (e.which === 37 && $('#back-button')) {
+      if (e.which === 37 && $('#back-button').is((i,e) => e)) {
         userAction.toggleProjectTabs($('#back-button')[0].attributes.navigateTo.value);
       }
-      if (e.which === 39 && $('#forward-button')) {
+      if (e.which === 39 && $('#forward-button').is((i,e) => e)) {
         userAction.toggleProjectTabs($('#forward-button')[0].attributes.navigateTo.value);
       }
     }
   });
-    // const code = e.keyCode;
-    // const valid = e.target.children.modal.children[1].firstChild;
-    // // console.log(valid, 'valid');
-    //
-    // if (valid) {
-    //   const leftArrowPage = e.target.children.modal.children[1].children[1].children[0].children[0].attributes.navigateTo.value;
-    //   // console.log(e.target.children.modal.children[1].children[1].children[0].children[0]); //left
-    //   const rightArrowPage = e.target.children.modal.children[1].children[1].children[0].children[2].attributes.navigateTo.value;
-    //   // console.log(e.target.children.modal.children[1].children[1].children[0].children[2]); //right
-    //   // console.log(e.target.lastElementChild.children[1]);
-    //   if (code === 37) { //left
-    //     userAction.toggleProjectTabs(leftArrowPage);
-    //   }
-    //   if (code === 39) { //right
-    //     userAction.toggleProjectTabs(rightArrowPage);
-    //   }
-    // }
 
   $buttons.on('click', userAction.openTab);
 
