@@ -36,23 +36,25 @@ $(()=>{
     closeModal: () => {
       $modal.addClass('out');
       $modal.toggleClass('is-active');
+    },
+
+    keyPress: (e) => {
+      if($('#modal').is(':visible')) {
+        if (e.which === 37 && $('#back-button').is((i,e) => e)) {
+          userAction.toggleProjectTabs($('#back-button')[0].attributes.navigateTo.value);
+        }
+        if (e.which === 39 && $('#forward-button').is((i,e) => e)) {
+          userAction.toggleProjectTabs($('#forward-button')[0].attributes.navigateTo.value);
+        }
+        if (e.which === 27) {
+          userAction.closeModal();
+        }
+      }
     }
 
   };
 
-  $('body').keydown(function(e) {
-    if($('#modal').is(':visible')) {
-      if (e.which === 37 && $('#back-button').is((i,e) => e)) {
-        userAction.toggleProjectTabs($('#back-button')[0].attributes.navigateTo.value);
-      }
-      if (e.which === 39 && $('#forward-button').is((i,e) => e)) {
-        userAction.toggleProjectTabs($('#forward-button')[0].attributes.navigateTo.value);
-      }
-      if (e.which === 27) {
-        userAction.closeModal();
-      }
-    }
-  });
+  $('body').keydown(userAction.keyPress);
 
   $buttons.on('click', userAction.openTab);
 
