@@ -14,6 +14,10 @@ $(()=>{
           $('#project-content').load('/views/aboutProfessional.html');
           $('#aboutProfessional').addClass('is-active');
         }
+        if (id === 'projectsPage') {
+          $('#project-content').load('/views/projectOne.html');
+          $('#projectOne').addClass('is-active');
+        }
       });
     },
 
