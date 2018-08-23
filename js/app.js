@@ -48,6 +48,9 @@ $(()=>{
       if (e.which === 39 && $('#forward-button').is((i,e) => e)) {
         userAction.toggleProjectTabs($('#forward-button')[0].attributes.navigateTo.value);
       }
+      if (e.which === 27) {
+        userAction.closeModal();
+      }
     }
   });
 
