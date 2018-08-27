@@ -100,6 +100,11 @@
   justify-content: center;
   flex-direction: column; }
 
+.dependency-icon {
+  display: flex;
+  justify-content: center;
+  align-items: center; }
+
 body {
   font-family: 'Fira Sans', sans-serif;
   min-height: 100%;
